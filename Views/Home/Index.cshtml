@@ -1,0 +1,20 @@
+﻿@using MvcSample.Web.Models
+@model User
+@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+    string helloClass = null;
+}
+
+<section class="featured">
+    <div class="content-wrapper">
+        <hgroup class="title">
+            <h1>Open Source × Microsoft Azure = <span id="hearts">&hearts;</span></h1>
+        </hgroup>
+    </div>
+</section>
+<section class="content-wrapper main-content clear-fix">
+    <div class="wmm">
+        <img src="wmm1.png" alt="WebMatrix Man" title="WebMatrix Man" />
+    </div>
+    <h3 title="@Model.Name" class="@helloClass">Hello @Model.Name!</h3>
+</section>
